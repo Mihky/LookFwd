@@ -142,7 +142,9 @@ hr{
 }
 
 #about-page{
-	background: black;
+	background: url("file:///Users/Eddy/Desktop/LookFwd/assets/img/about_background.jpg") no-repeat center center;
+	background-size: 100%;
+	background-attachment: fixed;
 	color:white;
 }
 
@@ -183,6 +185,7 @@ hr{
 
 #use-content, .page-content{
 	width: 90%;
+	display: table;
 }
 
 .set-image{

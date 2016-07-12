@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html> 
 	<title>LookFwd</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png" />
+
 	<!CSS>
-	<link rel="stylesheet" type="text/css" href="LookFwd.css">
+	<link rel="stylesheet" type="text/css" href="file:///Users/Eddy/Desktop/LookFwd/assets/css/LookFwd.css">
 	<!Javascript>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="assets/js/LookFwd.js"></script>
 	<!Fonts>
 <body>
 	<header id="navigationBar">
-		<div id="logo"></div>
+		<a id="logo" href="index.html"></a>
 		<nav class="dropdown">
-			<a href="#" id="menu">
+			<a id="menu"> <!-- href="#" -->
 				<div id="menu-button"></div>
 			</a>
-			<a class="menu-links" href="#app-does">What We Do</a>
-			<a class="menu-links" href="#power">Power</a>
-			<a class="menu-links" href="#use">How to Use</a>
+			<a id="about-link" class="menu-links" >About</a>
+			<a id="power-link" class="menu-links" >Goal</a>
+			<a id="use-link" class="menu-links" >How to Use</a>
 		</nav>
 	</header>
 	<section id="home-page" class="page">
-
+		<div class="homescreen-container">
+			<span id="hook" class="first-half featurette-textf">Weekend plans made easy</span>
+			<span class="second-half"></span>
+		</div>
 	</section>
 	<section id="about-page" class="page">
 		<div id="about-content" class="featurette-text">
 			<header class="page-content">
 				<h1 class="page-heading">About LookFwd.</h1>
 				<hr>
-				<p>Nullam imperdiet pretium sagittis. Nam ultrices eget nisl nec feugiat. Donec semper mauris pellentesque porttitor aliquet. Fusce consectetur dui vel felis adipiscing venenatis. Nulla at magna tempor, iaculis leo eu, ullamcorper magna. In mattis ipsum sed orci feugiat, ac lobortis neque dictum. Nunc porta enim massa, et placerat libero mollis vel. Cras vel aliquam nisl. In eu nibh ipsum. Donec vel magna laoreet, pretium urna vel, dictum risus. Nam rutrum tempor urna non tincidunt. Aenean erat nunc, tristique vitae molestie vitae, adipiscing quis turpis.</p>
+				<p>LookFwd is a mobile application that makes it easy to coordinate weekends with your friends. LookFwd allows users to simultaneously see their friends' real-time availability, message them and suggest plans to help bring friends together. LookFwd is the simple solution that makes it easy to spend more time with the people that matter most.</p>
 			</header>
 		</div>
 	</section>
 	<section id="power-page" class="page">
 		<div id="power-content" class="featurette-text">
-			<header class="page-content">
-				<h1 class="page-heading">Goal: Bring People Together</h1>
+			<header id="left-half-content" class="page-content">
+				<h1 id="goal-text" class="page-heading left-half-description">Goal: Bring People Together</h1>
+				<p class="left-half-description">The time you spend with the people that matter most can't be replaced. Yet, we find ourselves saying the following all to often:
+				<br>- "I had no idea you were even in town!"
+				<br>- "We'll have to get together on of these weekends when we're both free" 
+				<br>- "I would have texted you if I'd known you were going to be around!"
+				<br>We miss countless opportunities everyday to spend time with the people that matter the most to us through a lack of transparency in our social schedules. If we simply had that real time information, we could be infinitely more efficient in making sure that we capitalize on those missed social opportunities and spend more, quality time with the people that matter the most to us. LookFwd provides that information, in an intuitive solution. Get ready to make more memories with your friends.</p>
 				<div id="holding-hands-image" class="set-image"></div>
-				<p>Nullam imperdiet pretium sagittis. Nam ultrices eget nisl nec feugiat. Donec semper mauris pellentesque porttitor aliquet. Fusce consectetur dui vel felis adipiscing venenatis. Nulla at magna tempor, iaculis leo eu, ullamcorper magna. In mattis ipsum sed orci feugiat, ac lobortis neque dictum. Nunc porta enim massa, et placerat libero mollis vel. Cras vel aliquam nisl. In eu nibh ipsum. Donec vel magna laoreet, pretium urna vel, dictum risus. Nam rutrum tempor urna non tincidunt. Aenean erat nunc, tristique vitae molestie vitae, adipiscing quis turpis.</p>
+
 			</header>
 		</div>
 	</section>
@@ -42,7 +54,8 @@
 		<!-- <div id="use-page-content-container"> -->
 		<div class="featurette-text">
 			<header id="use-content" class="page-content">
-				<h1 class="page-heading">How to Use</h1>
+				<h1 id="use-header" class="page-heading">How to Use</h1>
+				<hr>
 				<div class="step-container">
 					<div id="step-1" class="set-image"></div>
 					<div class="step-text">Step 1: Slide when you're free this weekend and update anytime.</div>
@@ -55,7 +68,12 @@
 		</div>
 		<!-- </div> -->
 	</section>
-	<footer></footer>
+	<footer>
+		<div id="contact" class="footer-text">Contact E-mail: lookfwdapp@gmail.com</div>
+		<hr id="footer-div">
+		<p class="footer-text">&copy; LookFwd 2016 | All Rights Reserved.</p>
+		<div id="back-to-top-button" class="footer-text">Back to top</div>	
+	</footer>
 </body>
 
 <html/>
